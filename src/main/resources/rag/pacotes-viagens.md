@@ -1,11 +1,32 @@
-### Pacote Aventura Amazônia
-* Duração: 7 dias e 6 noites.
-* Atividades: Focagem noturna de jacarés, caminhada na selva, visita a comunidades ribeirinhas.
-* Política de cancelamento: Reembolso de 80% com 30 dias de antecedência.
-* Preço: R$ 4.500,00 por pessoa.
+PACOTE: Aventura Amazônia
+DESTINO: Amazônia, Brasil
+DURACAO_DIAS: 7
+DURACAO_NOITES: 6
 
-### Pacote Tesouros do Egito
-* Duração: 10 dias e 9 noites.
-* Atividades: Visita às pirâmides de Gizé, cruzeiro no Nilo, tour pelo Museu do Cairo.
-* Política de cancelamento: Reembolso de 50% com 30 dias de antecedência.
-* Preço: R$ 12.800,00 por pessoa.
+ATIVIDADES:
+- Focagem noturna de jacarés
+- Caminhada na selva
+- Visita a comunidades ribeirinhas
+
+POLITICA_CANCELAMENTO:
+- Reembolso de 80% com 30 dias de antecedência
+
+PRECO_POR_PESSOA: 4500 BRL
+TIPO: packages
+---
+
+PACOTE: Tesouros do Egito
+DESTINO: Egito
+DURACAO_DIAS: 10
+DURACAO_NOITES: 9
+
+ATIVIDADES:
+- Visita às pirâmides de Gizé
+- Cruzeiro no Nilo
+- Tour pelo Museu do Cairo
+
+POLITICA_CANCELAMENTO:
+- Reembolso de 50% com 30 dias de antecedência
+
+PRECO_POR_PESSOA: 12800 BRL
+TIPO: packages
