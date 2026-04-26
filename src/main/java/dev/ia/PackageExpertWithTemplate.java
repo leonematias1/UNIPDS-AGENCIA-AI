@@ -7,7 +7,7 @@ import io.quarkiverse.langchain4j.RegisterAiService;
 import io.quarkiverse.langchain4j.mcp.runtime.McpToolBox;
 
 @RegisterAiService()
-public interface PackageExpert {
+public interface PackageExpertWithTemplate {
 //    @SystemMessage("""
 //                Você é um assistente virtual da 'Mundo Viagens', um especialista em nossos pacotes de viagem.
 //                Sua principal responsabilidade é responder ás perguntas dos clientes de forma amigável e precisa,
@@ -34,5 +34,6 @@ public interface PackageExpert {
     
     """)
     @McpToolBox("booking-server")
-    String chat(@MemoryId String memoryId, @UserMessage String userMessage);
+    @UserMessage("Do what user is asking {message}. The user used for authentication is {username}")
+    String chat(@MemoryId String memoryId, String message, String username);
 }

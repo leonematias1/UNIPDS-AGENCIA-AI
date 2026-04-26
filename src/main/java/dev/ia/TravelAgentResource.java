@@ -10,25 +10,17 @@ import jakarta.ws.rs.core.MediaType;
 public class TravelAgentResource {
 
     @Inject
-    PackageExpert packageExpert;
-    //TravelAgentAssistant travelAgentAssistant;
+    PackageExpertWithTemplate packageExpertWithTemplate;
 
     @POST
     @Consumes(MediaType.TEXT_PLAIN)
     @Produces(MediaType.TEXT_PLAIN)
     public String ask(String question, @HeaderParam("X-User-Name") String userName) {
         if(userName != null && !userName.isEmpty()){
-            try{
-                SecurityContext.setCurrentUser(userName);
-                return packageExpert.chat(userName, question);
-            }finally {
-                SecurityContext.clear();
-            }
+            return packageExpertWithTemplate.chat(userName,question,userName);
         }else{
             return "Usuário precisa estar autenticado!";
         }
-        //return packageExpert.chat("session-123",question);
-        //return travelAgentAssistant.chat(question);
     }
 
 
